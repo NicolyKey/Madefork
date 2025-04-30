@@ -16,9 +16,9 @@ export default function OnboardingIten({ item }: Props) {
 
     return (
         <View style={{ width }}>
-            <Image source={item.image} style={[styles.image, { width, resizeMode: 'contain' }]} />
+            <Image source={item.image} style={styles.image} />
 
-            <View style={{ flex: 0.3 }}>
+            <View style={{ flex: 0.5 }}>
                 <Text style={styles.description}>{item.description}</Text>
             </View>
         </View>
@@ -27,12 +27,18 @@ export default function OnboardingIten({ item }: Props) {
 
 const styles = StyleSheet.create({
     image: {
-        flex: 0.7,
+        flex: 0.5,
+        width: 250,
+        resizeMode: 'contain',
+        alignSelf: 'center',
         justifyContent: 'center'
     },
     description: {
-        fontWeight: '300',
+        fontWeight: '900',
+        fontSize: 25,
+        width: '90%',
         color: '#000',
+        alignSelf: 'center',
         textAlign: 'center'
     }
 })

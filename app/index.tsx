@@ -1,3 +1,5 @@
+import Onboarding from "@/components/Onboarding";
+import { Stack } from "expo-router";
 import { View } from "react-native";
 
 
@@ -8,11 +10,12 @@ export default function Index() {
       style={{
         flex: 1,
         justifyContent: "center",
-        backgroundColor: "#175753",
+        backgroundColor: "#FFF",
         alignItems: "center",
       }}
     >
-
+      <Stack.Screen options={{ headerShown: false }} />
+      <Onboarding />
     </View>
   );
 }
