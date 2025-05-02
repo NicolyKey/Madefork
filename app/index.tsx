@@ -1,7 +1,6 @@
 import Onboarding from "@/components/Onboarding";
 import { Stack } from "expo-router";
-import { View } from "react-native";
-
+import { View, Text } from "react-native";
 
 
 export default function Index() {

@@ -6,7 +6,7 @@ export default function login() {
     return (
         <View style={{ backgroundColor: "#211C84" }}>
             <Stack.Screen options={{ headerShown: false }} />
-            <Text>login</Text>
+            <Text >login</Text>
             <Text>login</Text>
             <Text>login</Text>
             <Text>login</Text>
